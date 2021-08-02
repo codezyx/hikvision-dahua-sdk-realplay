@@ -1,0 +1,1 @@
+java -cp $CLASSPATH:lib/realplay.jar:lib/jna-3.0.9.jar xyz.minitool.DHPreview

@@ -18,7 +18,7 @@
   <name>hikvision-dahua-sdk-realplay</name>
   <url>https://github.com/codezyx/hikvision-dahua-sdk-realplay</url>
   <properties>
-    <package.directory>video-preview</package.directory>
+    <package.directory>realplay</package.directory>
     <maven.test.skip>true</maven.test.skip>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
@@ -66,7 +66,7 @@
               <mainClass>xyz.minitool.App</mainClass>
             </manifest>
           </archive>
-          <finalName>video-preview</finalName>
+          <finalName>realplay</finalName>
           <outputDirectory>${project.build.directory}/${package.directory}/lib</outputDirectory>
           <excludes>
             <exclude>logback.xml</exclude>
@@ -78,35 +78,16 @@
         <artifactId>maven-resources-plugin</artifactId>
         <executions>
           <execution>
-            <id>copy-resources</id>
-            <phase>package</phase>
-            <goals>
-              <goal>copy-resources</goal>
-            </goals>
-            <configuration>
-              <outputDirectory>${project.build.directory}/${package.directory}/conf</outputDirectory>
-              <resources>
-                <resource>
-                  <directory>${basedir}/src/main/resources</directory>
-                  <filtering>false</filtering>
-                  <includes>
-                    <include>logback.xml</include>
-                  </includes>
-                </resource>
-              </resources>
-            </configuration>
-          </execution>
-          <execution>
             <id>copy-sdk</id>
             <phase>package</phase>
             <goals>
               <goal>copy-resources</goal>
             </goals>
             <configuration>
-              <outputDirectory>${project.build.directory}/${package.directory}/sdk</outputDirectory>
+              <outputDirectory>${project.build.directory}/${package.directory}/so</outputDirectory>
               <resources>
                 <resource>
-                  <directory>${basedir}/src/main/resources/sdk/</directory>
+                  <directory>${basedir}/src/main/resources/so/</directory>
                   <filtering>false</filtering>
                 </resource>
               </resources>
@@ -125,7 +106,8 @@
                   <directory>${basedir}/src/main/resources</directory>
                   <filtering>false</filtering>
                   <includes>
-                    <include>start.sh</include>
+                    <include>dahua.sh</include>
+                    <include>haikang.sh</include>
                   </includes>
                 </resource>
               </resources>

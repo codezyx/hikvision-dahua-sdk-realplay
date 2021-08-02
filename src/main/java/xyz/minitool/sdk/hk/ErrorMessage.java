@@ -1,9 +1,9 @@
-package xyz.minitool.sdk;
+package xyz.minitool.sdk.hk;
 
 /**
  * 海康错误消息封装
  */
-public enum HikvisionErrorMessage {
+public enum ErrorMessage {
 
     NET_DVR_PASSWORD_ERROR("用户名或密码错误", 1),
     NET_DVR_NOENOUGHPRI("权限不足", 2),
@@ -18,14 +18,14 @@ public enum HikvisionErrorMessage {
     private String message;
     private Integer code;
 
-    HikvisionErrorMessage(String message, Integer code) {
+    ErrorMessage(String message, Integer code) {
         this.message = message;
         this.code = code;
     }
 
     public static String getMessage(Integer code) {
-        HikvisionErrorMessage[] values = HikvisionErrorMessage.values();
-        for (HikvisionErrorMessage value : values) {
+        ErrorMessage[] values = ErrorMessage.values();
+        for (ErrorMessage value : values) {
             if (code.equals(value.getCode())) {
                 return value.getMessage();
             }
