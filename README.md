@@ -30,11 +30,11 @@ ldconfig
 切换到普通用户，执行测试脚本
 dahua.sh    测试大华摄像头
 
-![dh](D:\ideaProjects\hikvision-dahua-sdk-realplay\dh.jpg)
+![dh](https://github.com/codezyx/hikvision-dahua-sdk-realplay/blob/master/dh.jpg)
 
 haikang.sh  测试海康摄像头
 
-![](D:\ideaProjects\hikvision-dahua-sdk-realplay\hk.jpg)
+![hk](https://github.com/codezyx/hikvision-dahua-sdk-realplay/blob/master/hk.jpg)
 
 ## 常见问题说明
 ### 1.jna版本调整
