@@ -1,0 +1,18 @@
+
+- 大华网络sdk  General_NetSDK_ChnEng_JAVA_Linux64_IS_V3.055.0000000.0.R.210602
+- 大华播放库   1435334_General_PlaySDK_Eng_Linux64_IS_V3.044.0000000.1.R.210312
+
+复制两个库里lib目录下的文件到这个文件夹
+
+avglobal.h
+dhconfigsdk.h
+dhnetsdk.h
+dhplay.h
+libavnetsdk.so
+libdhconfigsdk.so
+libdhnetsdk.so
+libdhplay.so
+libHWDec.so
+libIvsDrawer.so
+libjninetsdk.so
+libStreamConvertor.so
