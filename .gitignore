@@ -2,3 +2,5 @@
 /hikvision-dahua-sdk-realplay.iml
 /.idea/
 /.settings/
+/.classpath
+/.project
