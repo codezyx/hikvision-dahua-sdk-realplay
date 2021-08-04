@@ -34,16 +34,11 @@ public class DHPreview extends JFrame {
 
     // 设备信息扩展
     private NetSDKLib.NET_DEVICEINFO_Ex deviceInfo = new NetSDKLib.NET_DEVICEINFO_Ex();
-    private String m_strIp = "192.168.0.14";
-    private int m_nPort = 37777;
-    private String m_strUser = "admin";
-    private String m_strPassword = "admin";
     private static NetSDKLib.LLong mPlayPort = new NetSDKLib.LLong(0);
     private JTextField txtIp;
     private JTextField txtPort;
     private JTextField txtUser;
     private JTextField txtPass;
-    private JPanel panel_7;
     private JLabel labelTip;
 
     /**
@@ -112,11 +107,9 @@ public class DHPreview extends JFrame {
                     pass, nSpecCap, null, deviceInfo, nError);
             if (loginHandle.longValue() != 0) {
                 labelTip.setText("登录成功");
-                System.out.printf("Login Device[%s] Success!\n", m_strIp);
             } else {
                 int lastError = netSdk.CLIENT_GetLastError();
                 labelTip.setText("登录失败，错误码" + lastError);
-                System.err.printf("Login Device[%s] Fail.Error[0x%x]\n", m_strIp, lastError);
             }
         }
     }
@@ -362,7 +355,7 @@ public class DHPreview extends JFrame {
         });
         panel_5.add(btnNewButton, BorderLayout.CENTER);
 
-        panel_7 = new JPanel();
+        JPanel panel_7 = new JPanel();
         panel_7.setBorder(new EmptyBorder(5, 5, 5, 5));
         panel.add(panel_7);
         panel_7.setLayout(new BorderLayout(0, 0));
