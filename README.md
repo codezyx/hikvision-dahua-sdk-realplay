@@ -71,3 +71,6 @@ src/main/resources/res_xx.properties
 ```
 是大华sdk带的，在xyz.minitool.sdk.dh.common里面的Res类引用了
 
+## 部分坑
+大华播放sdk中，PLAY_GetFreePort接口文档中说的是返回true表示成功，但是实际调用中即使成功也总是返回false，所以这个接口的返回值不能直接用来判断业务逻辑，把返回值忽略吧。
+
