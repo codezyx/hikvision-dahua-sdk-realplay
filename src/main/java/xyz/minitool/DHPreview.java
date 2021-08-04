@@ -163,6 +163,7 @@ public class DHPreview extends JFrame {
             } else {
                 labelTip.setText("停止预览失败" + netSdk.CLIENT_GetLastError());
             }
+            playsdk.PLAY_ReleasePort(mPlayPort);
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -10,6 +10,8 @@ public interface DHPlayCtrl extends Library {
 
     boolean PLAY_GetFreePort(NetSDKLib.LLong playPort);
 
+    boolean PLAY_ReleasePort(NetSDKLib.LLong playPort);
+
     boolean PLAY_OpenStream(NetSDKLib.LLong playPort, Pointer pBuffer, int nSize, int nBufPoolSize);
 
     boolean PLAY_Play(NetSDKLib.LLong playPort, Pointer hWnd);
