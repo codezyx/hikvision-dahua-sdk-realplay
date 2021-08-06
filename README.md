@@ -14,9 +14,11 @@
 例如程序放在 /home/yuxiang/realplay 目录，
 那么配置文件内容为下面三行，第一行是大华动态链接库，第二行和第三行是海康的。
 
-> /home/yuxiang/realplay/so/dh
-> /home/yuxiang/realplay/so/hk
-> /home/yuxiang/realplay/so/hk/HCNetSDKCom
+```java
+/home/yuxiang/realplay/so/dh
+/home/yuxiang/realplay/so/hk
+/home/yuxiang/realplay/so/hk/HCNetSDKCom
+```
 
 保存配置
 
