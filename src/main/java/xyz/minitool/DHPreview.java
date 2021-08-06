@@ -155,8 +155,6 @@ public class DHPreview extends JFrame {
             System.out.println("Play_Stop " + (stopResult ? "success" : "failed"));
             boolean closeStream = playsdk.PLAY_CloseStream(mPlayPort);
             System.out.println("PLAY_CloseStream " + (closeStream ? "success" : "failed"));
-            boolean refreshPlay = playsdk.PLAY_RefreshPlay(mPlayPort);
-            System.out.println("PLAY_RefreshPlay " + (refreshPlay ? "success" : "failed"));
             if (netSdk.CLIENT_StopRealPlayEx(lRealHandle)) {
                 System.out.println("StopRealPlay success");
                 labelTip.setText("停止预览成功");
