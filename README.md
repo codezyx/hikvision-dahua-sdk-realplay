@@ -74,5 +74,7 @@ src/main/resources/res_xx.properties
 是大华sdk带的，在xyz.minitool.sdk.dh.common里面的Res类引用了
 
 ## 部分坑
-大华播放sdk中，PLAY_GetFreePort接口文档中说的是返回true表示成功，但是实际调用中即使成功也总是返回false，所以这个接口的返回值不能直接用来判断业务逻辑，把返回值忽略吧。
+- 大华播放sdk中，PLAY_GetFreePort接口文档中说的是返回true表示成功，但是实际调用中即使成功也总是返回false，所以这个接口的返回值不能直接用来判断业务逻辑，把返回值忽略吧。
+- 大华和海康sdk预览接口在Linux下只能使用callback方式，callback引用必须在界面类成员变量里声明，不然只能预览几秒钟。
+- Linux下停止预览后Panel会停留在预览的最后一帧，如果涉及到切换显示不同摄像头预览就会出现，预览第二个摄像头的时候隔几秒显示一次前一个预览的最后一帧，超诡异，只能换种方式实现，每次创建新的Panel。
 
