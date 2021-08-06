@@ -32,11 +32,11 @@ ldconfig
 
 ### 执行脚本 dahua.sh 测试大华摄像头
 
-![dh](https://github.com/codezyx/hikvision-dahua-sdk-realplay/blob/master/dh.jpg)
+![dh](http://img.minitool.xyz/github/dh.jpg)
 
 ### 执行脚本 haikang.sh 测试海康摄像头
 
-![hk](https://github.com/codezyx/hikvision-dahua-sdk-realplay/blob/master/hk.jpg)
+![hk](http://img.minitool.xyz/github/hk.jpg)
 
 ## 常见问题说明
 ### 1.jna版本调整
